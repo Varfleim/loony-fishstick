@@ -868,41 +868,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4123002001898975397, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
-      propertyPath: chunkGOName
-      value: Chunk
-      objectReference: {fileID: 0}
-    - target: {fileID: 4123002001898975397, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
       propertyPath: hexasphereGO
       value: 
       objectReference: {fileID: 271915775}
     - target: {fileID: 4123002001898975397, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
-      propertyPath: chunksRootGOName
-      value: ChunksRoot
-      objectReference: {fileID: 0}
-    - target: {fileID: 4123002001898975397, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
       propertyPath: hexasphereCollider
       value: 
       objectReference: {fileID: 271915777}
-    - target: {fileID: 4123002001898975397, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
-      propertyPath: provincesRootGOName
-      value: ProvincesRoot
-      objectReference: {fileID: 0}
-    - target: {fileID: 4123002001898975397, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
-      propertyPath: thinEdgeChunkGOName
-      value: ThinEdgesChunk
-      objectReference: {fileID: 0}
-    - target: {fileID: 4123002001898975397, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
-      propertyPath: thinEdgesRootGOName
-      value: ThinEdgesRoot
-      objectReference: {fileID: 0}
-    - target: {fileID: 4123002001898975397, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
-      propertyPath: thickEdgeChunkGOName
-      value: ThickEdgesChunk
-      objectReference: {fileID: 0}
-    - target: {fileID: 4123002001898975397, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
-      propertyPath: thickEdgesRootGOName
-      value: ThickEdgesRoot
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -992,6 +964,7 @@ Transform:
   - {fileID: 1360763531}
   - {fileID: 2115165152}
   - {fileID: 1192235346}
+  - {fileID: 2556705108048636885}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1717726686
@@ -1019,7 +992,7 @@ MonoBehaviour:
   - {fileID: 215772430}
   - {fileID: 1360763530}
   - {fileID: 2115165151}
-  - {fileID: 0}
+  - {fileID: 2556705108048636884}
 --- !u!114 &1717726687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1108,6 +1081,79 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2832228135066329638, guid: d2500ce18bae26945b9660706da78ac5, type: 3}
   m_PrefabInstance: {fileID: 2115165150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2556705108048636883
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1717726685}
+    m_Modifications:
+    - target: {fileID: 5130320339911672044, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130320339911672044, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130320339911672044, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130320339911672044, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130320339911672044, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130320339911672044, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130320339911672044, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130320339911672044, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130320339911672044, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130320339911672044, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445040417988860907, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+      propertyPath: m_Name
+      value: LoonyFishstickModule
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+--- !u!114 &2556705108048636884 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2967805062822614398, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+  m_PrefabInstance: {fileID: 2556705108048636883}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2649666c28835f4f96959ecf19795fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2556705108048636885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5130320339911672044, guid: 08c9aef515dfe4844b98e86fa4b27ab7, type: 3}
+  m_PrefabInstance: {fileID: 2556705108048636883}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
