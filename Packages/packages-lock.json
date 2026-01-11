@@ -248,7 +248,7 @@
         "com.leopotam.ecslite.extendedsystems": "2025.4.22",
         "com.leopotam.ecslite.unity.ugui": "2025.4.22"
       },
-      "hash": "ada693ca92d5e451db72fa956733fbd5aaef2637"
+      "hash": "560ae5ae6d91ead41706ed60bec6d6f60bbbe062"
     },
     "com.varfleim.octopus-grand-strategy": {
       "version": "https://github.com/Varfleim/octopus-grand-strategy.git",
@@ -260,7 +260,7 @@
         "com.leopotam.ecslite.extendedsystems": "2025.4.22",
         "com.leopotam.ecslite.unity.ugui": "2025.4.22"
       },
-      "hash": "589da1bda93c331fc98994da8faac2a6d90da243"
+      "hash": "803ac4fd80f12a676442eff94ffc8d1b47aad1f3"
     },
     "com.varfleim.octopus-hexasphere": {
       "version": "https://github.com/Varfleim/octopus-hexasphere.git",
@@ -273,7 +273,7 @@
         "com.leopotam.ecslite.threads": "2025.4.22",
         "com.leopotam.ecslite.unity.ugui": "2025.4.22"
       },
-      "hash": "878cd5203cfbd13c56a380579ee4e56bacc960b8"
+      "hash": "3098338e0e7f95039133726d5690e8b3740a23be"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",

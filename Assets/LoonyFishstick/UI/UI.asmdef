@@ -1,0 +1,20 @@
+{
+    "name": "GameUI",
+    "rootNamespace": "LF.GameUI",
+    "references": [
+        "GUID:e59bf9fc7d5a44b18a819a92edd46163",
+        "GUID:f5f01a091e0d746659b4380253d52f4e",
+        "GUID:de6c4adc3aaac4bb09212ed7b9ba2781",
+        "GUID:b32bc0920a31b724eb24db2bba81b9ae",
+        "GUID:62db0e21c5a7d26419706cdeea11286b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

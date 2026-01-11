@@ -36,7 +36,7 @@ namespace LF.Initialization
             }
         }
 
-        readonly EcsPoolInject<GBB.Map.Render.R_MapActivation> mapActivationRPool = default;
+        readonly EcsPoolInject<GBB.Map.Render.R_Map_Activation> mapActivationRPool = default;
         void MapInitialization(
             ref SR_Map_Initialization requestComp,
             int mapEntity)
@@ -53,33 +53,33 @@ namespace LF.Initialization
 
             //ТЕСТ
             //Запрашиваем активацию карты
-            GBB.Map.Render.MapRenderData.MapActivationRequest(
+            GBB.Map.Render.MapRender_Data.Map_Activation_Request(
                 world.Value,
                 mapActivationRPool.Value,
                 world.Value.PackEntity(mapEntity));
             //ТЕСТ
         }
 
-        readonly EcsPoolInject<SR_MapCreation> mapCreationSRPool = default;
+        readonly EcsPoolInject<SR_Map_Creation> mapCreationSRPool = default;
         void MapCreationRequest(
             ref SR_Map_Initialization requestComp,
             int mapEntity)
         {
             //Назначаем сущности запрос создания карты
-            ref SR_MapCreation mapCreationRequest = ref mapCreationSRPool.Value.Add(mapEntity);
+            ref SR_Map_Creation mapCreationRequest = ref mapCreationSRPool.Value.Add(mapEntity);
 
             //Заполняем данные запроса
             mapCreationRequest = new(
                 requestComp.mapName);
         }
 
-        readonly EcsPoolInject<SR_HexasphereCreation> hexasphereCreationSRPool = default; 
+        readonly EcsPoolInject<SR_Hexasphere_Creation> hexasphereCreationSRPool = default; 
         void HexasphereCreationRequest(
             ref SR_Map_Initialization requestComp,
             int mapEntity)
         {
             //Назначаем сущности запрос создания гексасферы
-            ref SR_HexasphereCreation hexasphereCreationRequest = ref hexasphereCreationSRPool.Value.Add(mapEntity);
+            ref SR_Hexasphere_Creation hexasphereCreationRequest = ref hexasphereCreationSRPool.Value.Add(mapEntity);
 
             //Заполняем данные запроса
             hexasphereCreationRequest = new(

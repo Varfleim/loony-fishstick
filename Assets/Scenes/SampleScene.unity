@@ -867,6 +867,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2291334145290639225, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
+      propertyPath: stick
+      value: 
+      objectReference: {fileID: 1547850291}
+    - target: {fileID: 2291334145290639225, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 330585545}
+    - target: {fileID: 2291334145290639225, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
+      propertyPath: swiwel
+      value: 
+      objectReference: {fileID: 210899963}
+    - target: {fileID: 2291334145290639225, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
+      propertyPath: hexasphereCamera
+      value: 
+      objectReference: {fileID: 1192235346}
     - target: {fileID: 4123002001898975397, guid: 87fb505c9373c37419d530cae06865f3, type: 3}
       propertyPath: hexasphereGO
       value: 
@@ -1015,6 +1031,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 828958048526398988, guid: d2500ce18bae26945b9660706da78ac5, type: 3}
       propertyPath: uICore
+      value: 
+      objectReference: {fileID: 870649079}
+    - target: {fileID: 828958048526398988, guid: d2500ce18bae26945b9660706da78ac5, type: 3}
+      propertyPath: uI_Core
       value: 
       objectReference: {fileID: 870649079}
     - target: {fileID: 2832228135066329638, guid: d2500ce18bae26945b9660706da78ac5, type: 3}
