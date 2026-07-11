@@ -8,82 +8,56 @@ namespace LF.Initialization
 {
     public class S_Map_Initialization : IEcsInitSystem
     {
-        readonly EcsWorldInject world = default;
-
         public void Init(IEcsSystems systems)
         {
             //Инициализируем карты
-            MapsInitialization();
+            Maps_Initialization();
         }
 
-        readonly EcsFilterInject<Inc<SR_Map_Initialization>> mapInitializationSRFilter = default;
-        readonly EcsPoolInject<SR_Map_Initialization> mapInitializationSRPool = default;
-        void MapsInitialization()
+        readonly EcsFilterInject<Inc<SR_Map_Initialization>> map_Initialization_SR_F = default;
+        readonly EcsPoolInject<SR_Map_Initialization> map_Initialization_SR_P = default;
+        void Maps_Initialization()
         {
             //Для каждого запроса инициализации карты
-            foreach (int mapRequestEntity in mapInitializationSRFilter.Value)
+            foreach (int mapRequestEntity in map_Initialization_SR_F.Value)
             {
                 //Берём запрос
-                ref SR_Map_Initialization requestComp = ref mapInitializationSRPool.Value.Get(mapRequestEntity);
+                ref SR_Map_Initialization requestComp = ref map_Initialization_SR_P.Value.Get(mapRequestEntity);
 
                 //Инициализируем карту
-                MapInitialization(
+                Map_Initialization(
                     ref requestComp,
                     mapRequestEntity);
 
                 //Удаляем запрос
-                mapInitializationSRPool.Value.Del(mapRequestEntity);
+                map_Initialization_SR_P.Value.Del(mapRequestEntity);
             }
         }
 
-        readonly EcsPoolInject<GBB.Map.Render.R_Map_Activation> mapActivationRPool = default;
-        void MapInitialization(
+        readonly EcsPoolInject<GBB.Map.Render.SR_Map_Activation> map_Activation_SR_P = default;
+        readonly EcsPoolInject<SR_Map_Creation> map_Creation_SR_P = default;
+        readonly EcsPoolInject<SR_Hexasphere_Creation> hS_Creation_SR_P = default; 
+        void Map_Initialization(
             ref SR_Map_Initialization requestComp,
             int mapEntity)
         {
             //Запрашиваем создание карты
-            MapCreationRequest(
-                ref requestComp,
-                mapEntity);
+            Map_Data.Map_Creation_SR(
+                mapEntity,
+                map_Creation_SR_P.Value);
 
             //Запрашиваем создание гексасферы
-            HexasphereCreationRequest(
-                ref requestComp,
-                mapEntity);
+            Hexasphere_Data.HS_Creation_SR(
+                mapEntity,
+                hS_Creation_SR_P.Value,
+                requestComp.hexasphereSubdivisions);
 
             //ТЕСТ
             //Запрашиваем активацию карты
-            GBB.Map.Render.MapRender_Data.Map_Activation_Request(
-                world.Value,
-                mapActivationRPool.Value,
-                world.Value.PackEntity(mapEntity));
+            GBB.Map.Render.MapRender_Data.Map_Activation_SR(
+                mapEntity,
+                map_Activation_SR_P.Value);
             //ТЕСТ
-        }
-
-        readonly EcsPoolInject<SR_Map_Creation> mapCreationSRPool = default;
-        void MapCreationRequest(
-            ref SR_Map_Initialization requestComp,
-            int mapEntity)
-        {
-            //Назначаем сущности запрос создания карты
-            ref SR_Map_Creation mapCreationRequest = ref mapCreationSRPool.Value.Add(mapEntity);
-
-            //Заполняем данные запроса
-            mapCreationRequest = new(
-                requestComp.mapName);
-        }
-
-        readonly EcsPoolInject<SR_Hexasphere_Creation> hexasphereCreationSRPool = default; 
-        void HexasphereCreationRequest(
-            ref SR_Map_Initialization requestComp,
-            int mapEntity)
-        {
-            //Назначаем сущности запрос создания гексасферы
-            ref SR_Hexasphere_Creation hexasphereCreationRequest = ref hexasphereCreationSRPool.Value.Add(mapEntity);
-
-            //Заполняем данные запроса
-            hexasphereCreationRequest = new(
-                requestComp.hexasphereSubdivisions);
         }
     }
 }

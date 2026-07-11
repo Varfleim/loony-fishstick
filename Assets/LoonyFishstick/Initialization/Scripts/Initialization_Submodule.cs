@@ -8,7 +8,7 @@ namespace LF.Initialization
     public class Initialization_Submodule : GameSubmodule
     {
         [SerializeField]
-        private InitializationData initializationData;
+        private Initialization_Data initialization_Data;
 
         public override void Systems_Add(GameStartup startup)
         {
@@ -20,15 +20,18 @@ namespace LF.Initialization
             //Инициализация карты
             startup.PreInitSystem_Add(new S_Map_Initialization());
 
-            //Инициализация агентов
-            startup.PreInitSystem_Add(new S_Agent_Initialization());
+            //Инициализация субъектов и объектов
+            startup.PreInitSystem_Add(new S_SubjectAndObject_Initialization());
+
+            //Инициализация GUI
+            startup.PreInitSystem_Add(new S_GUI_Initialization());
             #endregion
         }
 
         public override void Data_Inject(GameStartup startup)
         {
             //Вводим данные
-            startup.Data_Inject(initializationData);
+            startup.Data_Inject(initialization_Data);
         }
     }
 }

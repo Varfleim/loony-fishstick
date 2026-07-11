@@ -239,41 +239,38 @@
       "url": "https://packages.unity.com"
     },
     "com.varfleim.octopus-backbone": {
-      "version": "https://github.com/Varfleim/octopus-backbone.git",
+      "version": "file:C:/Users/timyr/VF/VF's gamedev/Unity/octopus-backbone/Packages/com.varfleim.octopus-backbone",
       "depth": 0,
-      "source": "git",
+      "source": "local",
       "dependencies": {
         "com.leopotam.ecslite": "2025.4.22",
         "com.leopotam.ecslite.di": "2025.4.22",
         "com.leopotam.ecslite.extendedsystems": "2025.4.22",
         "com.leopotam.ecslite.unity.ugui": "2025.4.22"
-      },
-      "hash": "560ae5ae6d91ead41706ed60bec6d6f60bbbe062"
+      }
     },
     "com.varfleim.octopus-grand-strategy": {
-      "version": "https://github.com/Varfleim/octopus-grand-strategy.git",
+      "version": "file:C:/Users/timyr/VF/VF's gamedev/Unity/octopus-grand-strategy/Packages/com.varfleim.octopus-grand-strategy",
       "depth": 0,
-      "source": "git",
+      "source": "local",
       "dependencies": {
         "com.leopotam.ecslite": "2025.4.22",
         "com.leopotam.ecslite.di": "2025.4.22",
         "com.leopotam.ecslite.extendedsystems": "2025.4.22",
         "com.leopotam.ecslite.unity.ugui": "2025.4.22"
-      },
-      "hash": "2078e8359b0f536d038e451870d9bfcf890e6228"
+      }
     },
     "com.varfleim.octopus-hexasphere": {
-      "version": "https://github.com/Varfleim/octopus-hexasphere.git",
+      "version": "file:C:/Users/timyr/VF/VF's gamedev/Unity/octopus-hexasphere/Packages/com.varfleim.octopus-hexasphere",
       "depth": 0,
-      "source": "git",
+      "source": "local",
       "dependencies": {
         "com.leopotam.ecslite": "2025.4.22",
         "com.leopotam.ecslite.di": "2025.4.22",
         "com.leopotam.ecslite.extendedsystems": "2025.4.22",
         "com.leopotam.ecslite.threads": "2025.4.22",
         "com.leopotam.ecslite.unity.ugui": "2025.4.22"
-      },
-      "hash": "3098338e0e7f95039133726d5690e8b3740a23be"
+      }
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",

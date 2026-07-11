@@ -1,0 +1,21 @@
+{
+    "name": "IL_DynastyGUI",
+    "rootNamespace": "LF.GameUI.Dynasty",
+    "references": [
+        "GUID:e59bf9fc7d5a44b18a819a92edd46163",
+        "GUID:f5f01a091e0d746659b4380253d52f4e",
+        "GUID:b32bc0920a31b724eb24db2bba81b9ae",
+        "GUID:62db0e21c5a7d26419706cdeea11286b",
+        "GUID:f8d5270c760f3a646bcade3ae4577ccf",
+        "GUID:b441c141ac702af449d8dd2bb1f3e9e8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
